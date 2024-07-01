@@ -11,5 +11,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-
+    @Autowired
+    LoginCredsRepo loginCredsRepo;
+    public Boolean fetchUser(String password){
+        return loginCredsRepo.existsByPassword(password);
+    }
 }
