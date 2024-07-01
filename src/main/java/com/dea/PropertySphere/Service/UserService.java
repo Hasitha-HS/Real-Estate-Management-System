@@ -10,12 +10,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
-    @Autowired
-    LoginCredsRepo loginCredsRepo;
 
-    LoginCreds login(int id,String password){
-        if (loginCredsRepo.existsById(id)){
 
-        }
-    }
 }
