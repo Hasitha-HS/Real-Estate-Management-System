@@ -38,4 +38,9 @@ RealEstatePro/
 │   └── docker/
 │       └── Dockerfile
 │
-├── qa/
+├── qa
+│ └── junit/
+│ ├── tests/
+│ └── pom.xml
+│
+└── README.md
