@@ -10,6 +10,6 @@ import java.util.Optional;
 public interface LoginCredsRepo extends JpaRepository<LoginCreds, Integer> {
 
     boolean existsByPassword(String password);
-    Optional<LoginCreds> findByMail (String email );
+    Optional<LoginCreds> findByEmail (String email );
 
 }
