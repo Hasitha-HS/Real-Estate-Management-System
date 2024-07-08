@@ -21,7 +21,7 @@ import java.util.function.Function;
 
 @Component
 public class JwtService {
-    public static String SECRET = "50686F7065727479537068657265";
+    public static String SECRET = "5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437";
 
 
     private String createToken(Map<String, Object> claims, String email) {
