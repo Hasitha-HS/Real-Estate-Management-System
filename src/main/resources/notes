@@ -1,0 +1,71 @@
+Property Management (Member 1)
+
+
+PropertyCreateService: POST /properties
+
+PropertyReadService: GET /properties (list), GET /properties/{id} (details)
+
+PropertyUpdateService: PUT /properties/{id}
+
+PropertyDeleteService: DELETE /properties/{id}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Client Management (Member 2)
+ClientCreateService: POST /clients
+ClientReadService: GET /clients (list), GET /clients/{id} (details)
+ClientUpdateService: PUT /clients/{id}
+ClientDeleteService: DELETE /clients/{id}
+
+Agent Management (Member 3)
+AgentCreateService: POST /agents
+AgentReadService: GET /agents (list), GET /agents/{id} (details)
+AgentUpdateService: PUT /agents/{id}
+AgentDeleteService: DELETE /agents/{id}
+
+Sales Management (Member 4)
+SaleCreateService: POST /sales
+SaleReadService: GET /sales (list), GET /sales/{id} (details)
+SaleUpdateService: PUT /sales/{id}
+SaleDeleteService: DELETE /sales/{id}
+
+Rental Management (Member 5)
+RentalCreateService: POST /rentals
+RentalReadService: GET /rentals (list), GET /rentals/{id} (details)
+RentalUpdateService: PUT /rentals/{id}
+RentalDeleteService: DELETE /rentals/{id}
+
+User Management (Member 6)
+UserCreateService: POST /users
+UserReadService: GET /users (list), GET /users/{id} (details)
+UserUpdateService: PUT /users/{id}
+UserDeleteService: DELETE /users/{id}
