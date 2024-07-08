@@ -9,7 +9,6 @@ import lombok.Setter;
 import java.util.Date;
 
 @Entity
-@Table(name = "user_data")
 @Getter
 @Setter
 public class UserData {
