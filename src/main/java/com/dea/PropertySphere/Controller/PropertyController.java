@@ -4,8 +4,9 @@ package com.dea.PropertySphere.Controller;
 import com.dea.PropertySphere.Model.PropertyModel;
 import com.dea.PropertySphere.Service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api/property")
@@ -24,10 +25,10 @@ public class PropertyController {
 
     //read single property
     @GetMapping(value = "/getProperty")
-     ResponseEntity<PropertyModel> getSingleProperty(@RequestParam int propertyId){
+    Optional<PropertyModel> getSingleProperty(@RequestParam int propertyId){
         //propertyService.readProperty(propertyId);
-        PropertyModel property = propertyService.readProperty(propertyId);
-        return ResponseEntity.ok(property);
+        Optional<PropertyModel> property = propertyService.readProperty(propertyId);
+        return property;
     }
 
     //delete property

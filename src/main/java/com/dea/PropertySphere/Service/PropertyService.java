@@ -21,11 +21,13 @@ public class PropertyService {
         return propertyRepo.save(property);
     }
 
-    public readProperty(int propertyId){
+    public Optional<PropertyModel> readProperty(int propertyId){
         if(propertyRepo.findById(propertyId).isEmpty()){
             System.out.println("Property Not Found!!!");
+            return Optional.empty();
         }
-        return propertyRepo.findById(propertyId);
+        else return propertyRepo.findById(propertyId);
+
     }
 
     public void deleteProperty(int propertyId){
