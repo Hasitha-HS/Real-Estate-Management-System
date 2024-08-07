@@ -37,4 +37,14 @@ public class PropertyController {
         propertyService.deleteProperty(propertyId);
     }
 
+    //Update Property
+    @PutMapping(value = "/updateProperty/{propertyId}")
+    public PropertyModel updatePropertyEndpoint(@PathVariable("propertyId") Integer propertyId, @RequestBody PropertyModel updatedProperty){
+        propertyService.updateProperty(propertyId, updatedProperty);
+        return null;
+    }
+
+
+
+
 }

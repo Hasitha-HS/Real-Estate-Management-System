@@ -40,5 +40,30 @@ public class PropertyService {
         }
     }
 
+//    public void updateProperty(PropertyModel property){
+//
+//
+//    }
+
+public PropertyModel updateProperty(int propertyId, PropertyModel updatedProperty) {
+        // Check if the property with the given ID exists
+        Optional<PropertyModel> existingPropertyOptional = propertyRepo.findById(propertyId);
+
+        if (existingPropertyOptional.isPresent()) {
+
+            // Update the existing property with new values
+            PropertyModel existingProperty = existingPropertyOptional.get();
+
+            existingProperty.setPropertyName(updatedProperty.getPropertyName());
+
+            // Save the updated property
+            return propertyRepo.save(existingProperty);
+        }
+
+        else {
+            System.out.println("Property Not Found!!!");
+            return null;
+        }
+    }
 
 }
