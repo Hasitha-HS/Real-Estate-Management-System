@@ -19,7 +19,7 @@ public class PropertyModel {
     int propertyID;
     String propertyName;
     String propertyLocation;
-    Double propertyPrice;
+    String propertyOwner;
 
 
 }
