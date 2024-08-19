@@ -21,6 +21,7 @@ public class PropertyService {
         return propertyRepo.save(property);
     }
 
+    //Read a property from database
     public Optional<PropertyModel> readProperty(int propertyId){
         if(propertyRepo.findById(propertyId).isEmpty()){
             System.out.println("Property Not Found!!!");
@@ -30,6 +31,7 @@ public class PropertyService {
 
     }
 
+    //Delete a property from database
     public void deleteProperty(int propertyId){
         if(propertyRepo.findById(propertyId).isEmpty()){
             System.out.println("Property Not Exists");
@@ -40,7 +42,8 @@ public class PropertyService {
         }
     }
 
-public PropertyModel updateProperty(int propertyId, PropertyModel updatedProperty) {
+    //Update property details
+    public PropertyModel updateProperty(int propertyId, PropertyModel updatedProperty) {
         // Check if the property with the given ID exists
         Optional<PropertyModel> existingPropertyOptional = propertyRepo.findById(propertyId);
 
