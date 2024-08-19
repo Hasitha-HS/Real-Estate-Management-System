@@ -12,6 +12,7 @@ import java.util.Optional;
 @RequestMapping(value = "/api/property")
 public class PropertyController {
 
+
     @Autowired
     PropertyService propertyService;
 
@@ -43,7 +44,6 @@ public class PropertyController {
         propertyService.updateProperty(propertyId, updatedProperty);
         return null;
     }
-
 
 
 

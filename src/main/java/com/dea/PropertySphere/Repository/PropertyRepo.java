@@ -1,4 +1,4 @@
-package com.dea.PropertySphere.Repo;
+package com.dea.PropertySphere.Repository;
 
 import com.dea.PropertySphere.Model.PropertyModel;
 import org.springframework.data.jpa.repository.JpaRepository;
