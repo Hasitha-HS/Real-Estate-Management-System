@@ -1,7 +1,7 @@
 package com.dea.PropertySphere.mapper;
 
 import com.dea.PropertySphere.dto.TenantDto;
-import com.dea.PropertySphere.model.Tenant;
+import com.dea.PropertySphere.Model.Tenant;
 
 public class TenantMapper {
     public static TenantDto mapToTenantDto(Tenant tenant){
