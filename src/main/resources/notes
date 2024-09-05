@@ -12,6 +12,14 @@ PropertyDeleteService: DELETE /properties/{id}
 
 
 
+change repo to repository
+
+Service
+add impl package
+extend
+
+
+
 
 
 
