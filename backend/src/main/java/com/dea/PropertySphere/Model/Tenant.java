@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "tenants")
 public class Tenant {
-    add comments
+    //tenant class
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

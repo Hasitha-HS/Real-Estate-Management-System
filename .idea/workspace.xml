@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3159e488-cca4-4e72-bb19-52af551e2ed0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/springboot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/Controller/TenantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/Controller/TenantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/Model/Tenant.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/Model/Tenant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/PropertySphereApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/PropertySphereApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/dto/TenantDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/dto/TenantDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/exception/TenantNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/exception/TenantNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/mapper/TenantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/mapper/TenantMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/repository/ITenantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/repository/ITenantRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/service/ITenantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/service/ITenantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dea/PropertySphere/service/Implimentation/TenantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/service/Implimentation/TenantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dea/PropertySphere/PropertySphereApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/dea/PropertySphere/PropertySphereApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/Model/Tenant.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/dea/PropertySphere/Model/Tenant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +58,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MIS DOCUMENTS\YEAR 4\DEA 2\Real-estate-project\Real-Estate-Management-System\backend" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="PropertySphereApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dea.PropertySphere.PropertySphereApplication" />
