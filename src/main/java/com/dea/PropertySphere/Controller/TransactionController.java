@@ -1,7 +1,7 @@
 package com.dea.PropertySphere.Controller;
 
 import com.dea.PropertySphere.dto.TransactionDto;
-import com.dea.PropertySphere.service.ITransactionService;
+import com.dea.PropertySphere.Service.ITransactionService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

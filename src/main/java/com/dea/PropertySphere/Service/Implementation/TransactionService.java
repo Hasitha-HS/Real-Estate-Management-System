@@ -4,8 +4,8 @@ import com.dea.PropertySphere.Mapper.TransactionMapper;
 import com.dea.PropertySphere.Model.Transaction;
 import com.dea.PropertySphere.dto.TransactionDto;
 import com.dea.PropertySphere.exception.ResourceNotFoundException;
-import com.dea.PropertySphere.repository.ITransactionRepository;
-import com.dea.PropertySphere.service.ITransactionService;
+import com.dea.PropertySphere.Repository.ITransactionRepository;
+import com.dea.PropertySphere.Service.ITransactionService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
