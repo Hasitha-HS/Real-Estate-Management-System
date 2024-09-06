@@ -1,13 +1,13 @@
-package com.kavinda.crudapp;
+package com.dea.PropertySphere;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrudappApplication {
+public class PropertySphereApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrudappApplication.class, args);
+		SpringApplication.run(PropertySphereApplication.class, args);
 	}
 
 }
