@@ -1,5 +1,5 @@
-##Important notice
-##The main branch does not contain the full codebase as we have not yet merged all services. To view the complete code, please check the relevant sub-branches where the code for different services is available.
+# Important notice
+# The main branch does not contain the full codebase as we have not yet merged all services. To view the complete code, please check the relevant sub-branches where the code for different services is available.
 
 
 # Real Estate Management System
