@@ -1,67 +1,20 @@
 package com.dea.PropertySphere.Service;
 
-
 import com.dea.PropertySphere.Model.PropertyModel;
-import com.dea.PropertySphere.Repository.PropertyRepo;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Service
-public class PropertyService {
+public interface PropertyService {
 
-    @Autowired
-    PropertyRepo propertyRepo;
+    // Save a property
+    PropertyModel saveProperty(PropertyModel property);
 
-//    propertyCreateService
-//    return save->database
+    // Read a property by ID
+    Optional<PropertyModel> readProperty(int propertyId);
 
-    public PropertyModel saveProperty(PropertyModel property){
-        return propertyRepo.save(property);
-    }
+    // Delete a property by ID
+    void deleteProperty(int propertyId);
 
-    //Read a property from database
-    public Optional<PropertyModel> readProperty(int propertyId){
-        if(propertyRepo.findById(propertyId).isEmpty()){
-            System.out.println("Property Not Found!!!");
-            return Optional.empty();
-        }
-        else return propertyRepo.findById(propertyId);
-
-    }
-
-    //Delete a property from database
-    public void deleteProperty(int propertyId){
-        if(propertyRepo.findById(propertyId).isEmpty()){
-            System.out.println("Property Not Exists");
-        }
-        else {
-            propertyRepo.deleteById(propertyId);
-            System.out.println("Property(" + propertyId + ") Deleted ");
-        }
-    }
-
-    //Update property details
-    public PropertyModel updateProperty(int propertyId, PropertyModel updatedProperty) {
-        // Check if the property with the given ID exists
-        Optional<PropertyModel> existingPropertyOptional = propertyRepo.findById(propertyId);
-
-        if (existingPropertyOptional.isPresent()) {
-
-            // Update the existing property with new  values
-            PropertyModel existingProperty = existingPropertyOptional.get();
-
-            existingProperty.setPropertyName(updatedProperty.getPropertyName());
-
-            // Save the updated property
-            return propertyRepo.save(existingProperty);
-        }
-
-        else {
-            System.out.println("Property Not Found!!!");
-            return null;
-        }
-    }
-
+    // Update an existing property
+    PropertyModel updateProperty(int propertyId, PropertyModel updatedProperty);
 }
