@@ -1,10 +1,10 @@
-package com.dea.PropertySphere;
+package com.kavinda.crudapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PropertySphereApplicationTests {
+class CrudappApplicationTests {
 
 	@Test
 	void contextLoads() {
