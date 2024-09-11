@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const REST_API_BASE_URL = 'http://localhost:8080/api/tenants';
+const REST_API_BASE_URL = 'http://localhost:8080/property';
 
 //Return the list of all the tenants
 export const listTenants = ()=>axios.get(REST_API_BASE_URL);

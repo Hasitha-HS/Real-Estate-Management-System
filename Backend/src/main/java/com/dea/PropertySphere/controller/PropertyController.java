@@ -1,8 +1,9 @@
 package com.dea.PropertySphere.controller;
 
 import com.dea.PropertySphere.model.Property;
-import com.dea.PropertySphere.service.PropertyService;
+import com.dea.PropertySphere.service.implimentaion.PropertyServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 public class PropertyController {
 
     @Autowired
-    private PropertyService propertyService;
+    private PropertyServiceImpl propertyService;
 
     @GetMapping("/getAll")
     public List<Property> list(){
@@ -22,12 +23,17 @@ public class PropertyController {
     @PostMapping("/add")
     public String add(@RequestBody Property property){
         propertyService.save(property);
-        return "New student added";
+        return "New property added";
     }
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable Long id){
         propertyService.delete(id);
-        return "Deleted student with id "+id;
+        return "Deleted property with id "+id;
+    }
+    @PutMapping("/update/{id}")
+    public ResponseEntity<Property> updateProperty(@PathVariable Long id, @RequestBody Property propertyDetails) {
+        Property updatedProperty = propertyService.updateProperty(id, propertyDetails);
+        return ResponseEntity.ok(updatedProperty);
     }
 }

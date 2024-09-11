@@ -22,7 +22,7 @@ const HeaderComponent = () => {
                 <Link className="nav-link" to="/financial">Financial</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/financial">Maintenance</Link>
+                <Link className="nav-link" to="/maintenance">Maintenance</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/Marketing & Sales">Marketing & Sales</Link>

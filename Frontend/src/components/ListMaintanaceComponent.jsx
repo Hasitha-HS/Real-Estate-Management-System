@@ -1,7 +1,7 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { deleteTenant, listTenants } from '../services/TenantService';
+import { deleteTenant, listTenants } from '../services/MaintatanceService';
 
 const ListTenantComponent = () => {
 

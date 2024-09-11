@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { createTenant, getTenant, updateTenant } from '../services/TenantService';
+import { createTenant, getTenant, updateTenant } from '../services/MaintatanceService';
 
 const TenantComponent = () => {
     const [firstName, setFirstName] = useState('');

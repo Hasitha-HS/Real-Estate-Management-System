@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import FooterComponent from './components/FooterComponent'
 import HeaderComponent from './components/HeaderComponent'
-import ListTenantComponent from './components/ListTenantComponent'
-import TenantComponent from './components/TenantComponent'
+import ListTenantComponent from './components/ListMaintanaceComponent'
+import TenantComponent from './components/MaintananceComponent'
 
 function App() {
  
