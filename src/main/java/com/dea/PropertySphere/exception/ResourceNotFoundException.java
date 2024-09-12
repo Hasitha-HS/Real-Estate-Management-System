@@ -10,4 +10,5 @@ public class ResourceNotFoundException extends RuntimeException{
     }
 }
 
-//add trasnc nt found ek ecxtend krgnn
+//If a transaction with a given Id is not there in the db, this exception is thrown and spring boot will catch
+//it and get the error msg from the exception and it'll send the error msg along with the HTTP status to the user

@@ -17,7 +17,7 @@ public class TransactionController {
 
     private ITransactionService transactionService;
 
-    //Build Add transaction Rest API
+    //Build Add transaction REST API
     @PostMapping
     public ResponseEntity<TransactionDto> createTransaction(@RequestBody TransactionDto transactionDto){
         TransactionDto savedTransaction = transactionService.createTransaction(transactionDto);
@@ -25,7 +25,7 @@ public class TransactionController {
     }
 
 
-    //Build get transaction Rest API
+    //Build get transaction REST API
     //add doc comments
     @GetMapping("{id}")
     public ResponseEntity<TransactionDto> getTransactionId(@PathVariable("id") Long transactionId){
@@ -34,13 +34,14 @@ public class TransactionController {
     }
 
 
-    //build get all transactions rest API
+    //build get all transactions REST API
     @GetMapping
     public ResponseEntity<List<TransactionDto>> getAllTransactions(){
         List<TransactionDto> transactionDtos= transactionService.getAllTransactions();
         return  ResponseEntity.ok(transactionDtos);
     }
 
+    //build update transactions REST API
     @PutMapping("{id}")
     public ResponseEntity<TransactionDto> updateTransaction(@PathVariable("id") Long transactionId,
                                                   @RequestBody TransactionDto updatedTransaction){
@@ -48,6 +49,7 @@ public class TransactionController {
         return ResponseEntity.ok(transactionDto);
     }
 
+    //build delete transactions REST API
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteTransaction(@PathVariable("id") Long transactionId){
         transactionService.deleteTransaction(transactionId);

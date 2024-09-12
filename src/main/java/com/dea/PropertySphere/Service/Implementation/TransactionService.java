@@ -13,13 +13,17 @@ import java.util.List;
 import java.util.stream.Collectors;
 @Service
 @AllArgsConstructor
+//the service layer is created
 public class TransactionService implements ITransactionService {
 
     private ITransactionRepository transactionRepository;
     @Override
     public TransactionDto createTransaction(TransactionDto transactionDto) {
+        //first convert TransactionDto into Transaction JPA entity as we need to store the Transaction model into the db
         Transaction transaction = TransactionMapper.mapToTransaction(transactionDto);
+        //next save the model to the db
         Transaction savedTransaction = transactionRepository.save(transaction);
+        //next need to return the saved Transaction obj ack to the user. So need toconvert the saved Transaction model into TransactionDto
         return TransactionMapper.mapToTransactionDto(savedTransaction);
     }
 

@@ -7,12 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+//annotations for creating constructors
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class TransactionDto {
 
+//we use TransactionDto class to transfer data between the server and the client
+public class TransactionDto {
     private Long id;
     private Long tenantId;
     private Double amount;

@@ -4,6 +4,8 @@ import com.dea.PropertySphere.Model.Transaction;
 import com.dea.PropertySphere.dto.TransactionDto;
 
 public class TransactionMapper {
+    //we pass Transaction model as a parameter
+    //we create TransactionMapper to map Transaction model to TransactionDto and TransactionDto to Transaction model
     public static TransactionDto mapToTransactionDto(Transaction transaction){
         return  new TransactionDto(
                 transaction.getId(),
