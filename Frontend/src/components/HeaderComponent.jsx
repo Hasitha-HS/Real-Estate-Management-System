@@ -16,13 +16,13 @@ const HeaderComponent = () => {
                 <Link className="nav-link" to="/properties">Properties</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/tenants">Tenants</Link>
+                <Link className="nav-link" to="/tenants">Tenants</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/financial">Financial</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/maintenance">Maintenance</Link>
+                <Link className="nav-link active" to="/maintenance">Maintenance</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/Marketing & Sales">Marketing & Sales</Link>

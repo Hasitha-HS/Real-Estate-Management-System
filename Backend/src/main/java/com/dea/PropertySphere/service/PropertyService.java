@@ -9,6 +9,7 @@ public interface PropertyService {
     void save(Property property);
 
     List<Property> listAll();
+    Property getById(Long id);
 
     void delete(Long id);
 

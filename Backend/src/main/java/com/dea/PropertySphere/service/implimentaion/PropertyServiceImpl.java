@@ -27,6 +27,18 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
+    public Property getById(Long id) {
+        Optional<Property> optionalProperty = propertyRepository.findById(id);
+
+        if (optionalProperty.isPresent()) {
+            return optionalProperty.get();
+        } else {
+            // Handle the case where the property doesn't exist
+            throw new RuntimeException("Property not found with id " + id);
+        }
+    }
+
+    @Override
     public void delete(Long id){
         propertyRepository.deleteById(id);
     }

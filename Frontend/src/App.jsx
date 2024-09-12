@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import FooterComponent from './components/FooterComponent'
 import HeaderComponent from './components/HeaderComponent'
-import ListTenantComponent from './components/ListMaintanaceComponent'
-import TenantComponent from './components/MaintananceComponent'
+import ListMaintenanceComponent from './components/ListMaintenaceComponent'
+import MaintenanceComponent from './components/MaintenanceComponent'
 
 function App() {
  
@@ -16,13 +16,13 @@ function App() {
           <div className="main-content">
             <Routes>
               {/* //http://localhost:3000 */}
-              <Route path='/' element={<ListTenantComponent />}></Route>
-              {/* //http://localhost:3000/tenants */}
-              <Route path='/tenants' element={<ListTenantComponent/>}></Route>
-              {/* //http://localhost:3000/add-tenant */}
-              <Route path='/add-tenant' element= {<TenantComponent/>}></Route>
-              {/* //http://localhost:3000/edit-tenant/1 */}
-              <Route path='/edit-tenant/:id' element = {<TenantComponent/>}></Route>
+              <Route path='/' element={<ListMaintenanceComponent/>}></Route>
+              {/* //http://localhost:3000/maintenance */}
+              <Route path='/maintenance' element={<ListMaintenanceComponent/>}></Route>
+              {/* //http://localhost:3000/add-maintenance */}
+              <Route path='/add-maintenance' element= {<MaintenanceComponent/>}></Route>
+              {/* //http://localhost:3000/edit-maintenance/1 */}
+              <Route path='/edit-maintenance/:id' element = {<MaintenanceComponent/>}></Route>
             </Routes>
           </div>
           <FooterComponent />
