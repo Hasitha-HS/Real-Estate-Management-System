@@ -1,2 +1,0 @@
-# Real Estate Management System
- The Real Estate Management System (REMS) is a comprehensive software solution designed to streamline and automate various aspects of real estate management. This system caters to property managers, real estate agents, landlords, and tenants by providing a centralized platform to manage property listings, financial transactions, tenant relationships, facility maintenance, marketing efforts, and market analysis.
