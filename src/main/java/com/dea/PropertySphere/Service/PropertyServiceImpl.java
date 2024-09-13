@@ -6,6 +6,7 @@ import com.dea.PropertySphere.Repository.PropertyRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,6 +18,9 @@ public class PropertyServiceImpl implements PropertyService {
 //    propertyCreateService
 //    return save->database
 
+    public List<PropertyModel> getAllProperties() {
+        return propertyRepo.findAll();
+    }
     public PropertyModel saveProperty(PropertyModel property){
         return propertyRepo.save(property);
     }
@@ -53,6 +57,9 @@ public class PropertyServiceImpl implements PropertyService {
             PropertyModel existingProperty = existingPropertyOptional.get();
 
             existingProperty.setPropertyName(updatedProperty.getPropertyName());
+            existingProperty.setPropertyOwner(updatedProperty.getPropertyOwner());
+            existingProperty.setPropertyLocation(updatedProperty.getPropertyLocation());
+            existingProperty.setPropertyImg(updatedProperty.getPropertyImg());
 
             // Save the updated property
             return propertyRepo.save(existingProperty);
